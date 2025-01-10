@@ -132,3 +132,25 @@ window.addEventListener('scroll', revealExtrascolaire);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.querySelector('.burger').addEventListener('click', function () {
+    document.querySelector('header nav').classList.toggle('active');
+});
+
+
+
