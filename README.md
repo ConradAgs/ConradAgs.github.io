@@ -2,7 +2,7 @@
 
 Bienvenue sur mon portfolio ! Ce projet présente mes compétences, formations, projets, et expériences professionnelles dans un format interactif et visuellement attrayant. 
 
-Ce portfolio est hébergé via **GitHub Pages**. Pour voir le site en ligne, rendez-vous sur https://conradags.github.io .
+Ce portfolio est hébergé via **GitHub Pages**. Pour voir le site en ligne, rendez-vous sur https://conradags.github.io/conradags.github.io .
 
 ## 🌟 Fonctionnalités
 
