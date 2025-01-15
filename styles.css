@@ -945,3 +945,21 @@ header nav a:hover {
         width: 100%; /* Prend toute la largeur sur les petits écrans */
     }
 }
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em; /* Réduction pour les très petits écrans */
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 0.9em; /* Ajustement pour les paragraphes */
+    }
+}
