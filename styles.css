@@ -871,6 +871,10 @@ header nav a:hover {
         max-width: 80%;
     }
 
+    #competences {
+    display: none;
+    }
+    
     .competences-wrapper {
         flex-direction: column; /* Stack columns vertically */
         gap: 40px;
