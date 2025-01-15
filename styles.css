@@ -873,6 +873,24 @@ header nav a:hover {
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Réduction pour les écrans petits */
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em; /* Ajustement pour les paragraphes */
+    }
+}
+
+@media (max-width: 768px) {
     header {
         padding: 10px 20px;
     }
