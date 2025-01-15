@@ -872,7 +872,7 @@ header nav a:hover {
     }
 
     #competences {
-    display: none;
+    display: block;
     }
     
     .competences-wrapper {
