@@ -795,10 +795,7 @@ h2 {
         flex-direction: row;
         gap: 15px;
     }
-}
-
-
-@media (max-width: 768px) {
+    
     .ml-project-card {
         width: 100%; /* Prend toute la largeur sur les petits écrans */
     }
