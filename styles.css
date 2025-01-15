@@ -870,31 +870,41 @@ header nav a:hover {
         margin-top: 20px;
         max-width: 80%;
     }
-}
 
-@media (max-width: 768px) {
-    section{
-         font-size: 0.9em
+    .competences-wrapper {
+        flex-direction: column; /* Stack columns vertically */
+        gap: 40px;
+    }
+
+    .competences-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .experience-item p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .formation-wrapper {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .formation-left {
+        margin-bottom: 20px;
+    }
+
+    .formation-right {
+        text-align: left; /* Align text for readability */
+    }
+
+    .education-item h4 {
+        font-size: 1.3em; /* Slightly smaller titles */
+    }
+
+    .education-item ul li {
+        font-size: 0.9em; /* Adjust font size */
     }
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8em; /* Réduction pour les écrans petits */
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-
-    h3 {
-        font-size: 1em;
-    }
-
-    p {
-        font-size: 0.9em; /* Ajustement pour les paragraphes */
-    }
-}
 
 @media (max-width: 768px) {
     header {
@@ -950,6 +960,39 @@ header nav a:hover {
     .ml-project-card {
         width: 100%; /* Prend toute la largeur sur les petits écrans */
     }
+
+    .competence-item img {
+        width: 40px; /* Reduce logo size */
+        height: 40px;
+    }
+
+    .competence-item span {
+        font-size: 0.8em; /* Smaller font size for labels */
+    }
+
+    .competences-grid {
+        grid-template-columns: 1fr; /* One item per row on very small screens */
+    }
+
+    .competence-item {
+        font-size: 0.8em;
+    }
+
+    .experience-item p {
+        font-size: 0.9em;
+    }
+
+    .formation-left img {
+        max-width: 80%; /* Reduce image size */
+    }
+
+    .education-item h4 {
+        font-size: 1.2em;
+    }
+
+    .education-item ul li {
+        font-size: 0.8em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -967,5 +1010,13 @@ header nav a:hover {
 
     p {
         font-size: 0.9em; /* Ajustement pour les paragraphes */
+    }
+
+    .education-item h4 {
+        font-size: 1em; /* Compact titles for very small screens */
+    }
+
+    .education-item ul li {
+        font-size: 0.7em; /* Smaller font size for details */
     }
 }
