@@ -873,20 +873,26 @@ header nav a:hover {
 }
 
 @media (max-width: 768px) {
+    body{
+         font-size: 0.9em
+    }
+}
+
+@media (max-width: 768px) {
     h1 {
-        font-size: 2em; /* Réduction pour les écrans petits */
+        font-size: 1.8em; /* Réduction pour les écrans petits */
     }
 
     h2 {
-        font-size: 1.8em;
+        font-size: 1.2em;
     }
 
     h3 {
-        font-size: 1.6em;
+        font-size: 1em;
     }
 
     p {
-        font-size: 1em; /* Ajustement pour les paragraphes */
+        font-size: 0.9em; /* Ajustement pour les paragraphes */
     }
 }
 
@@ -952,11 +958,11 @@ header nav a:hover {
     }
 
     h2 {
-        font-size: 1.6em;
+        font-size: 1.2em;
     }
 
     h3 {
-        font-size: 1.4em;
+        font-size: 1em;
     }
 
     p {
