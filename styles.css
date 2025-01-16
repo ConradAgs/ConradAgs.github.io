@@ -1012,17 +1012,23 @@ header nav a:hover {
         font-size: 0.8em;
     }
 
-    #savoir-faire .content ul li {
-        font-size: 1em;
+    #savoir-faire h2,
+    #outils h2,
+    #projs h2 {
+        font-size: 1.2em;
     }
 
-    .category {
-        flex: 1 1 100%; /* Une colonne sur les petits écrans */
-        max-width: 100%;
+    #savoir-faire .content p,
+    #outils p {
+        font-size: 0.7em;
+    }
+
+    #savoir-faire .content ul li {
+        font-size: 0.7em;
     }
 
     .category a {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
 
@@ -1051,18 +1057,4 @@ header nav a:hover {
         font-size: 0.7em; /* Smaller font size for details */
     }
 
-    #savoir-faire h2,
-    #outils h2,
-    #projs h2 {
-        font-size: 1.5em;
-    }
-
-    #savoir-faire .content p,
-    #outils p {
-        font-size: 0.9em;
-    }
-
-    .category a {
-        font-size: 1em;
-    }
 }
