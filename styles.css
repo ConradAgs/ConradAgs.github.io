@@ -1053,6 +1053,21 @@ header nav a:hover {
         flex: 1 1 calc(50% - 15px); /* Deux colonnes sur tablettes */
         max-width: 400px;
     }
+
+    #regressions-series h2,
+    #machine-learning h2 {
+        font-size: 2em;
+    }
+
+    .ml-project-card h3,
+    .rst-project-card h3 {
+        font-size: 1.5em;
+    }
+
+    .ml-project-card ul li,
+    .rst-project-card ul li {
+        font-size: 1em;
+    }
 }
 
 
@@ -1162,11 +1177,36 @@ header nav a:hover {
     .category a {
         font-size: 1em;
     }
+
+    .ml-project-card,
+    .rst-project-card {
+        width: 100%;
+    }
+
+    #regressions-series h2,
+    #machine-learning h2 {
+        font-size: 1.5em;
+    }
+
+    .ml-project-card h3,
+    .rst-project-card h3 {
+        font-size: 1.3em;
+    }
+
+    .ml-project-card p,
+    .rst-project-card p {
+        font-size: 1em;
+    }
+
+    .ml-project-card ul li,
+    .rst-project-card ul li {
+        font-size: 0.9em;
+    }
 }
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 1.8em; /* Réduction pour les très petits écrans */
+        font-size: 1.8em; 
     }
 
     h2 {
@@ -1178,15 +1218,15 @@ header nav a:hover {
     }
 
     p {
-        font-size: 0.9em; /* Ajustement pour les paragraphes */
+        font-size: 0.9em; 
     }
 
     .education-item h4 {
-        font-size: 1em; /* Compact titles for very small screens */
+        font-size: 1em; 
     }
 
     .education-item ul li {
-        font-size: 0.7em; /* Smaller font size for details */
+        font-size: 0.7em; 
     }
 
 }
