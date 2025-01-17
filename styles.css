@@ -1123,20 +1123,20 @@ header nav a:hover {
     }
     
     .ml-project-card {
-        width: 100%; /* Prend toute la largeur sur les petits écrans */
+        width: 100%; 
     }
 
     .competence-item img {
-        width: 40px; /* Reduce logo size */
+        width: 40px; 
         height: 40px;
     }
 
     .competence-item span {
-        font-size: 0.8em; /* Smaller font size for labels */
+        font-size: 0.8em; 
     }
 
     .competences-grid {
-        grid-template-columns: 1fr; /* One item per row on very small screens */
+        grid-template-columns: 1fr; 
     }
 
     .competence-item {
@@ -1148,7 +1148,11 @@ header nav a:hover {
     }
 
     .formation-left img {
-        max-width: 80%; /* Reduce image size */
+        max-width: 80%;
+    }
+
+    .education-item p {
+        font-size: 0.9em;
     }
 
     .education-item h4 {
