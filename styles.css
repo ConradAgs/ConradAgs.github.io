@@ -344,17 +344,32 @@ h2 {
 
 .projets-container {
     display: flex;
-    overflow: hidden; /* Masquer la scrollbar */
-    scroll-behavior: smooth;
+    overflow-x: auto; /* Active le défilement horizontal */
+    scroll-behavior: smooth; /* Rend le défilement fluide */
+    gap: 20px; /* Ajoute un espace entre les cartes */
+    padding: 10px 0;
+    touch-action: pan-x; /* Permet le défilement horizontal tactile */
+    -webkit-overflow-scrolling: touch; /* Rend le défilement fluide sur iOS */
+}
+
+/* Masquer la scrollbar */
+.projets-container::-webkit-scrollbar {
+    display: none;
+}
+
+.projets-container {
+    -ms-overflow-style: none; /* Masque la barre de défilement sur IE */
+    scrollbar-width: none; /* Masque la barre sur Firefox */
 }
 
 .projet-card {
-    min-width: 300px;
-    margin: 10px;
-    padding: 20px;
+    flex: 0 0 calc(33.333% - 20px); /* Largeur d'une carte avec espace pour le gap */
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    flex-shrink: 0;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
 }
 
 .projet-logo img {
@@ -365,6 +380,7 @@ h2 {
 
 .projet-card h3 {
     margin: 10px 0;
+    font-size: 1.2em;
 }
 
 .projet-status {
@@ -379,6 +395,7 @@ h2 {
 
 .projet-card ul li {
     margin: 5px 0;
+    font-size: 0.9em;
 }
 
 .nav-buttons {
@@ -400,14 +417,10 @@ h2 {
     background-color: #666;
 }
 
-/* Masquer la scrollbar */
-.projets-container::-webkit-scrollbar {
-    display: none;
-}
-
-.projets-container {
-    -ms-overflow-style: none; /* IE 10+ */
-    scrollbar-width: none; /* Firefox */
+/* Animation au survol */
+.projet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 
