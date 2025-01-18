@@ -1015,7 +1015,6 @@ header nav a:hover {
     }
     
     .competences-wrapper {
-        flex-direction: column; /* Stack columns vertically */
         gap: 40px;
     }
 
