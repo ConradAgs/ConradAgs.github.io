@@ -1141,7 +1141,9 @@ header nav a:hover {
         font-size: 0.8em; 
     }
 
-
+    .competences-grid {
+        grid-template-columns: 1fr;
+    }
     .competence-item {
         font-size: 0.8em;
     }
