@@ -1015,20 +1015,16 @@ header nav a:hover {
     }
     
     .competences-wrapper {
-        flex-direction: column; /* Stack columns vertically */
+        flex-direction: column;
         gap: 40px;
     }
 
-    .competences-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
-
     .experience-item p {
-        font-size: 1em; /* Adjust font size for smaller screens */
+        font-size: 1em; 
     }
 
     .formation-wrapper {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
     }
 
     .formation-left {
@@ -1036,15 +1032,15 @@ header nav a:hover {
     }
 
     .formation-right {
-        text-align: left; /* Align text for readability */
+        text-align: left; 
     }
 
     .education-item h4 {
-        font-size: 1.3em; /* Slightly smaller titles */
+        font-size: 1.3em; 
     }
 
     .education-item ul li {
-        font-size: 0.9em; /* Adjust font size */
+        font-size: 0.9em; 
     }
 
     #savoir-faire .content p,
@@ -1057,7 +1053,7 @@ header nav a:hover {
     }
 
     .category {
-        flex: 1 1 calc(50% - 15px); /* Deux colonnes sur tablettes */
+        flex: 1 1 calc(50% - 15px);
         max-width: 400px;
     }
 
@@ -1142,9 +1138,6 @@ header nav a:hover {
         font-size: 0.8em; 
     }
 
-    .competences-grid {
-        grid-template-columns: 1fr; 
-    }
 
     .competence-item {
         font-size: 0.8em;
