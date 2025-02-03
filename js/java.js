@@ -24,11 +24,6 @@ heroElements.forEach(element => {
 
 
 
-
-
-
-
-
 // **2. Gestion des compétences et expériences avec IntersectionObserver**
 const competenceItems = document.querySelectorAll('#competences .column > div, #competences .experience-item');
 
