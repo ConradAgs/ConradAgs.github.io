@@ -1,8 +1,3 @@
-
-
-
-
-
 const heroElements = document.querySelectorAll('.hero .text, .hero .image');
 
 // Fonction pour ajouter la classe 'visible' progressivement
@@ -26,7 +21,6 @@ const heroObserver = new IntersectionObserver(revealHeroElements, {
 heroElements.forEach(element => {
     heroObserver.observe(element);
 });
-
 
 
 
@@ -86,16 +80,6 @@ const revealExtrascolaire = () => {
 
 // Écouteur de défilement pour les cartes extra-scolaires
 window.addEventListener('scroll', revealExtrascolaire);
-
-
-
-
-
-
-
-
-
-
 
 
 
