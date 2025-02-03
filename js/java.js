@@ -1,25 +1,3 @@
-const container = document.querySelector('.projets-container');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-
-prevBtn.addEventListener('click', () => {
-    container.scrollBy({
-        left: -300,
-        behavior: 'smooth'
-    });
-});
-
-nextBtn.addEventListener('click', () => {
-    container.scrollBy({
-        left: 300,
-        behavior: 'smooth'
-    });
-});
-
-
-
-
-
 
 
 
@@ -55,26 +33,6 @@ heroElements.forEach(element => {
 
 
 
-
-// **1. Gestion des cartes de projet avec getBoundingClientRect**
-const projetCards = document.querySelectorAll('.projet-card');
-
-const revealProjects = () => {
-    projetCards.forEach(card => {
-        const cardTop = card.getBoundingClientRect().top;
-        const cardBottom = card.getBoundingClientRect().bottom;
-
-        // Ajoute ou supprime la classe "visible"
-        if (cardTop < window.innerHeight - 100 && cardBottom > 0) {
-            card.classList.add('visible');
-        } else {
-            card.classList.remove('visible');
-        }
-    });
-};
-
-// Écouteur de défilement pour les cartes de projet
-window.addEventListener('scroll', revealProjects);
 
 
 // **2. Gestion des compétences et expériences avec IntersectionObserver**
