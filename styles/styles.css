@@ -58,7 +58,6 @@ h2 {
     transition: all 0.8s ease-out;
 }
 
-/* Classe ajoutée pour rendre les éléments visibles avec une animation fluide */
 .hero .text.visible,
 .hero .image.visible {
     opacity: 1;
@@ -101,7 +100,7 @@ h2 {
 .competences-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 40px; /* Espace entre colonnes */
+    gap: 40px; 
 }
 
 .column {
@@ -116,8 +115,8 @@ h2 {
 
 .competences-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Grille adaptable */
-    gap: 0; /* Espacement entre les éléments */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    gap: 0; 
     width: 60%;
     margin-top: 30px;
 }
@@ -135,7 +134,7 @@ h2 {
     font-size: 1.8rem;
 }
 .competence-item img {
-    width: 40px; /* Taille uniforme des logos */
+    width: 40px; 
     height:44px;
     object-fit: contain;
 }
@@ -146,19 +145,19 @@ h2 {
     position: relative;
     margin-bottom: 2rem;
     padding-left: 2rem;
-    border-left: 2px solid #007BFF; /* Ligne de la chronologie */
+    border-left: 2px solid #007BFF; 
 }
 
 .experience-item:before {
     content: "";
     position: absolute;
-    left: -8px; /* Positionnement du point */
+    left: -8px; 
     top: 0;
     width: 16px;
     height: 16px;
-    background-color: #007BFF; /* Couleur du point */
-    border-radius: 50%; /* Rendre le point circulaire */
-    border: 3px solid #fff; /* Bordure blanche autour du point */
+    background-color: #007BFF; 
+    border-radius: 50%; 
+    border: 3px solid #fff; 
 }
 
 .experience-item h4 {
@@ -176,7 +175,7 @@ h2 {
 }
 
 .experience-item p strong {
-    color: #FF5733; /* Accentuation sur les mots-clés */
+    color: #FF5733; 
 }
 
 #certifications {
@@ -189,7 +188,7 @@ h2 {
 .certification-display {
     position: relative;
     width: 100%;
-    height: 150px; /* Ajustez la hauteur selon vos besoins */
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,44 +202,6 @@ h2 {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-/* Style pour la certification visible */
-.certification-item.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#certifications {
-    text-align: center;
-    margin: 50px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.certification-display {
-    position: relative;
-    width: 100%;
-    height: 150px; /* Ajustez la hauteur selon vos besoins */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.certification-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-/* Style pour la certification visible */
-.certification-item.active {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* Section Formation */
@@ -314,7 +275,6 @@ h2 {
     color: #c14444;
 }
 
-/* Animation de base */
 #competences .column > div,
 #competences .experience-item {
     opacity: 0;
@@ -322,100 +282,12 @@ h2 {
     transition: all 0.6s ease-out;
 }
 
-/* Classe visible : les éléments apparaissent avec une animation fluide */
 #competences .column > div.visible,
 #competences .experience-item.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Styles pour la section Projets */
-
-#projets {
-    max-width: 80%;
-    margin: 50px auto;
-    text-align: center;
-}
-
-#projets h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.projets-container {
-    display: flex;
-    overflow: hidden; 
-    scroll-behavior: smooth;
-    touch-action: pan-x; 
-    -webkit-overflow-scrolling: touch; 
-    scroll-snap-type: x mandatory;
-}
-
-.projet-card {
-    min-width: 300px;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    flex-shrink: 0;
-
-    scroll-snap-align: start; 
-    flex: 0 0 calc(30% - 20px); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.projet-logo img {
-    width: 100%;
-    max-width: 80px;
-    margin-bottom: 10px;
-}
-
-.projet-card h3 {
-    margin: 10px 0;
-}
-
-.projet-status {
-    font-style: italic;
-    color: #66ccff;
-}
-
-.projet-card ul {
-    list-style: none;
-    padding: 0;
-}
-
-.projet-card ul li {
-    margin: 5px 0;
-}
-
-.nav-buttons {
-    margin-top: 20px;
-}
-
-.nav-buttons button {
-    background-color: rgb(250, 248, 248);
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 5px;
-    font-size: 18px;
-}
-
-.nav-buttons button:hover {
-    background-color: #666;
-}
-
-/* Masquer la scrollbar */
-.projets-container::-webkit-scrollbar {
-    display: none;
-}
-
-.projets-container {
-    -ms-overflow-style: none; /* IE 10+ */
-    scrollbar-width: none; /* Firefox */
-}
 
 
 /* Section Expériences Extra-Scolaires */
