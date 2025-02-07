@@ -289,6 +289,46 @@ h2 {
 }
 
 
+/* Cartes des certifications */
+.certifications {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.certification {
+    background: #ffffff;
+    padding: 15px;
+    border-left: 5px solid #4A90E2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.certification:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certification h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.certification p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.certif-logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Centrer le logo */
+}
+
 
 /* Section Expériences Extra-Scolaires */
 #extrascolaire {
@@ -1082,6 +1122,10 @@ header nav a:hover {
     .ml-project-card ul li,
     .rst-project-card ul li {
         font-size: 0.9em;
+    }
+
+    .certifications {
+        grid-template-columns: 1fr;
     }
 }
 
