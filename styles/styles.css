@@ -18,6 +18,7 @@ header {
     font-family: "Ultra", serif;
     font-weight: 400;
     font-style: normal;
+    position: fixed;
 }
 
 header a {
