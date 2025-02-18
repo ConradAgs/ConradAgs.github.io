@@ -1172,6 +1172,14 @@ header nav a:hover {
     .certifications {
         grid-template-columns: 1fr;
     }
+
+    .viz-projects-list {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
