@@ -660,8 +660,6 @@ h2 {
 
 
 #visualisation {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
@@ -740,8 +738,6 @@ h2 {
 
 
 
-/* Responsive ajustements */
-/* Style global du header */
 header {
     display: flex;
     justify-content: space-between;
@@ -772,7 +768,6 @@ header nav a:hover {
     color: #0056b3;
 }
 
-/* Style de la section hero */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -823,7 +818,6 @@ header nav a:hover {
     font-weight: bold;
 }
 
-/* Project cards container */
 .rst-projects-list {
     display: flex;
     flex-direction: column;
@@ -831,7 +825,6 @@ header nav a:hover {
     align-items: center;
 }
 
-/* Individual project card */
 .rst-project-card {
     background-color: white;
     border-radius: 10px;
@@ -843,13 +836,11 @@ header nav a:hover {
     text-align: left;
 }
 
-/* Hover effect */
 .rst-project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Project card content */
 .rst-project-card h3 {
     color: #FF9800;
     font-weight: bold;
@@ -883,7 +874,6 @@ header nav a:hover {
     color: #FF9800;
 }
 
-/* Links */
 .rst-project-card a {
     color: #FF9800;
     text-decoration: none;
