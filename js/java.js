@@ -2,7 +2,7 @@
 
 const container = document.querySelector('.projets-container');
 
-// **1. Gestion des cartes de projet avec getBoundingClientRect**
+//** Section des projets**
 const projetCards = document.querySelectorAll('.projet-card');
 
 const revealProjects = () => {
@@ -19,7 +19,6 @@ const revealProjects = () => {
     });
 };
 
-// Écouteur de défilement pour les cartes de projet
 window.addEventListener('scroll', revealProjects);
 
 
@@ -41,7 +40,6 @@ const revealCompetences = (entries) => {
     });
 };
 
-// Crée un IntersectionObserver
 const competenceObserver = new IntersectionObserver(revealCompetences, {
     threshold: 0.1, // L'élément est considéré visible si 10% de sa surface est visible
 });
@@ -81,6 +79,7 @@ window.addEventListener('scroll', revealExtrascolaire);
 
 
 
+//**Mon menu
 
 document.addEventListener("DOMContentLoaded", function () {
     const menuBouton = document.querySelector(".menu-bouton");
@@ -105,11 +104,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+// Ma section de compétences
 
 document.addEventListener("DOMContentLoaded", function () {
     const competenceData = {
-        programmation: ["Python", "R", "HTML", "CSS"],
+        programmation: ["Python", "R", "HTML", "CSS", "SAS"],
         visualisation: ["R Shiny", "Power BI", "Matplotlib", "Seaborn"],
         bdd: ["SQL", "XML"],
         ml: ["Scikit-learn", "TensorFlow", "PyTorch", "XGBoost", "Random Forest"],
