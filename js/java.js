@@ -139,6 +139,10 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("click", function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
+        }
+    });
+});
+
 
 
 function openModal() {
@@ -147,6 +151,3 @@ function openModal() {
 function closeModal() {
     document.getElementById("modal").style.display = "none";
 }
-        }
-    });
-});
