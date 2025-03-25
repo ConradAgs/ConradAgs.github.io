@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Machine Learning</title>
+    <link rel="stylesheet" href="../css/main3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playwrite+AU+SA:wght@100..400&family=Ultra&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="ligne">
+        <div class="barre-haut">
+            <div class="menu-container">
+                <button class="menu-bouton" aria-label="Ouvrir le menu">
+                    <span></span>
+                </button>
+                <nav id="navigation-principale">
+                    <ul class="menu-principal">
+                        <li><a class="defilement-doux" href="../index.html#presentation-profil">Présentation</a></li>
+                        <li><a class="defilement-doux" href="../index.html#competences-contener">Compétences</a></li>
+                        <li><a class="defilement-doux" href="../index.html#experiences-pro">Expériences</a></li>
+                        <li><a class="defilement-doux" href="../index.html#projets">Projets</a></li>
+                        <li><a class="defilement-doux" href="../index.html#extrascolaire">Extras</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div> 
+    <nav>
+        <a href="../index.html#projs">Retour</a>
+    </nav>
+</header>
+
+<section id="machine-learning">
+    <h2>Projets - Machine Learning</h2>
+    <div class="ml-projects-list">
+        <div class="ml-project-card">
+            <h3>Algorithme de recommandation d'emploi (en cours)</h3>
+            <p>
+                Développement d'un système de recommandation d'offres d'emploi basé uniquement sur le comportement de navigation des utilisateurs, sans nécessité de connexion ou d'informations personnelles.
+            </p>
+            <ul>
+                <li>🔍 Online Machine Learning & Collaborative Filtering</li>
+                <li>📊 Analyse séquentielle des interactions utilisateurs</li>
+                <li>⚡ Prédiction des annonces les plus pertinentes</li>
+                <li>📈 Évaluation avec Mean Reciprocal Rank (MRR) et Accuracy</li>
+            </ul>
+            <a class="more-info" onclick="openModal('modal')">Lisez en plus</a> |
+            <a href="https://github.com/ConradAgs/Data-Science/tree/main/Machine%20Learning/Recommandation%20d'Emploi%20Bas%C3%A9e%20sur%20le%20Comportement" target="_blank">Voir le code sur GitHub</a> |
+            <a href="https://challengedata.ens.fr/challenges/164" target="_blank">Voir la page du challenge</a>
+        </div>
+
+        <div class="ml-project-card">
+            <h3>Prédiction de l'affluence dans les gares SNCF-Transilien</h3>
+            <p>
+                Analyse des données pour prédire l'affluence dans les gares en utilisant des modèles avancés de Machine Learning comme Random Forest et XGBoost.
+            </p>
+            <ul>
+                <li>📊 Analyse de données avec Pandas et NumPy</li>
+                <li>📈 Visualisation des données avec Matplotlib et Seaborn</li>
+                <li>⚙️ Modélisation avec des algorithmes supervisés</li>
+                <li>📉 Évaluation des modèles : RMSE, R² Score</li>
+            </ul>
+            <a href="#" class="more-info" onclick="openModal('modal-sncf')">Lisez en plus</a> |
+            <a href="https://github.com/ConradAgs/Data-Science/tree/main/Machine%20Learning/Anticipation%20de%20l'affluence%20au%20sein%20des%20gares%20SNCF-Transilien%20!" target="_blank">Voir le code sur GitHub</a> |
+            <a href="https://challengedata.ens.fr/challenges/149" target="_blank">Voir la page du challenge</a>
+        </div>
+
+
+        <div class="ml-project-card">
+            <h3>Projet k-plus proches voisins</h3>
+            <p>
+                Concevoir un classifieur automatique basé sur l'algorithme des k-plus proches voisins. Ce modèle permettra de prédire une caractéristique d'un individu (ou objet) en se basant sur les attributs descriptifs de cet individu, à l'aide d'un jeu d'entraînement.
+            </p>
+            <ul>
+                <li>⚙️ Implémentation d'un classifieur automatique en Python</li>
+                <li>📚 Utilisation de jeux d'entraînement et de test pour la prédiction</li>
+                <li>🔧 Développement d'un algorithme de classification supervisée</li>
+            </ul>
+            <a href="https://github.com/ConradAgs/Data-Science/tree/main/Machine%20Learning/Projet%20k-plus%20proches%20voisins" target="_blank">Voir le code sur GitHub</a> |
+            <a href="../doc/P01_knn.pdf" target="_blank">Voir le projet</a>
+        </div>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal')">&times;</span>
+                <h2>Détails du projet</h2>
+                <p><strong>Notre premier objectif</strong> est de prédire pour un individu donné, les 10 offres les plus susceptibles de l'intéresser dans notre catalogue. Ensuite, on peut pouvoir estimer (prédire) si la prochaine action de notre utilisateur sera juste de consulter ou de candidater.</p>
+        
+                <h3>🛠️ Tentative initiale</h3>
+                <p>
+                    Pour trouver les 10 offres à recommander à notre utilisateur, je recherche ses plus proches voisins à partir d'une matrice de distance.
+                    Je prenais les 100 plus proches, et ensuite je regarde les 10 offres les plus consultées dans cette sous-population (chacune de ces 10 offres a donc un score qui représente leur fréquence).
+                    Enfin, pour prédire l'intention de postuler de notre utilisateur, je fais la moyenne des 10 scores, et prédis qu'il postulera si le score dépasse un certain seuil que j'ai fixé.
+                </p>
+        
+                <h3>🚧 Problèmes</h3>
+                <p>
+                    Les dimensions étant énormes (15 881 x 22 000), la première exécution de l'algorithme a pris... <strong>deux semaines</strong> 😆.
+                    J'ai essayé de l'optimiser, mais rien à faire, et les solutions cloud arrêtaient de tourner après quelques heures.
+                    Autre problème, mon algo prédisait que la prochaine action de tous mes utilisateurs serait de simplement <strong>consulter</strong> (donc jamais postuler 😅).
+                    Au final, en calculant les métriques d'évaluation de mon modèle d'apprentissage, elles n'étaient pas trop reluisantes...
+                    Il faut donc revoir mon seuil et mon algo, mais faudrait encore attendre 3 semaines ? <strong>Je crois pas.</strong> 
+                </p>
+        
+                <h3>🔮 Perspectives</h3>
+                <p>
+                    J’envisage de réduire mon échantillon d'entraînement à 500, ajuster mon seuil et améliorer la sélection des 10 emplois à recommander.
+                    Mon algo actuel recommande seulement en se basant sur les <strong>autres</strong> offres consultées par les plus proches voisins, même si elles ne sont pas pertinentes.
+                    <br>
+                    Alors, et si je procédais autrement ? 🤔 Une fois les voisins ciblés, je peux identifier les mots-clés apparaissant dans les offres qu’ils ont consultées (ainsi que leur fréquence).
+                    Je pourrais alors recommander en priorité les offres contenant ces mots-clés.
+                </p>
+
+                <h3>🔚 Conclusion</h3>
+                <p>
+                    Ce projet est encore en cours, et chaque itération m'apprend quelque chose de nouveau. 
+                    L'objectif reste le même : créer un moteur de recommandation efficace, rapide et pertinent, sans nécessiter d'informations personnelles. 
+                    La prochaine étape sera d'implémenter l'approche basée sur les mots-clés et d'évaluer si elle permet une meilleure pertinence des recommandations.  
+                    <br><br>
+                    <strong>Affaire à suivre… 🚀</strong>
+                </p>
+            </div>
+        </div>
+
+        <div id="modal-sncf" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-sncf')">&times;</span>
+                <h2>Détails du projet</h2>
+
+                <h3>🎯 Objectif</h3>
+                <p>
+                    Tout a commencé avec un défi passionnant : prédire l'affluence dans les gares SNCF-Transilien pour mieux gérer les flux de passagers. 📊  
+                    L'enjeu ? Exploiter des données historiques pour fournir des estimations précises du nombre de voyageurs à différents moments de la journée.  
+                </p>
+
+
+                <p>
+                    🔍 La première étape a été une exploration approfondie des données : nettoyage, fusion et extraction des informations temporelles.  
+                    L'objectif était de dégager des tendances et de structurer les variables pour alimenter nos modèles de Machine Learning.  
+                    Ensuite, j’ai procédé à l’encodage des variables catégorielles, notamment les noms des gares, pour les rendre exploitables par les algorithmes.  
+                </p>
+                <p>
+                    ⚙️ Une fois les données prêtes, place à la modélisation !  
+                    J’ai testé plusieurs algorithmes de régression :  
+                    - 🌲 Random Forest pour sa robustesse  
+                    - 💡 LightGBM pour sa rapidité  
+                    - 🚀 XGBoost pour ses performances optimales  
+                </p>
+                <p>
+                    Chaque modèle a été  évalué à l’aide de métriques comme RMSE et R² afin d’identifier celui offrant les meilleures prédictions. 📈  
+                    À l’issue des tests, XGBoost s’est révélé être le plus performant, permettant une anticipation plus précise des flux de passagers.  
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="footer-container">
+        <!-- Section Contact -->
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <ul>
+                <li>📧 Email : <a href="conradagossou@gmail.com">conradagossou@gmail.com</a></li>
+                <li>📞 Téléphone : <a href="tel:+33745611648">+33 7 45 61 16 48</a></li>
+                <li>📍 Localisation : Rennes, France</li>
+            </ul>
+        </div>
+
+        <!-- Section Réseaux Sociaux -->
+        <div class="footer-social">
+            <button id="social-btn">Réseaux Sociaux</button>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/conrad-agossou" target="_blank">
+                    <img src="../img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/ConradAgs" target="_blank">
+                    <img src="../img/github.png" alt="GitHub">
+                </a>
+                <a href="mailto:conradagossou@gmail.com" target="_blank">
+                    <img src="../img/mail.png" alt="Email">
+                </a>
+            </div>
+        </div>
+
+        <!-- Section Complémentaire -->
+        <div class="footer-extras">
+            <a href="../doc/cv.pdf" target="_blank" class="cv-link">📄 Télécharger mon CV</a>
+            <a href="#contact-form" class="contact-link">📬 Formulaire de contact</a>
+        </div>
+
+        <!-- Section Copyright -->
+        <div class="footer-copyright">
+            <p>&copy; 2025 Conrad AGOSSOU. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/java.js"></script>
+
+</body>
+</html>
