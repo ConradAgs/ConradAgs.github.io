@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Apprentissage non supervisé</title>
+    <link rel="stylesheet" href="../css/main3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playwrite+AU+SA:wght@100..400&family=Ultra&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="ligne">
+        <div class="barre-haut">
+            <div class="menu-container">
+                <button class="menu-bouton" aria-label="Ouvrir le menu">
+                    <span></span>
+                </button>
+                <nav id="navigation-principale">
+                    <ul class="menu-principal">
+                        <li><a class="defilement-doux" href="../index.html#presentation-profil">Présentation</a></li>
+                        <li><a class="defilement-doux" href="../index.html#competences-contener">Compétences</a></li>
+                        <li><a class="defilement-doux" href="../index.html#experiences-pro">Expériences</a></li>
+                        <li><a class="defilement-doux" href="../index.html#projets">Projets</a></li>
+                        <li><a class="defilement-doux" href="../index.html#extrascolaire">Extras</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div> 
+    <nav>
+        <a href="../index.html#projs">Retour</a>
+    </nav>
+</header>
+
+<section id="machine-learning">
+    <h2>Projets - Apprentissage non supervisé</h2>
+    <div class="ml-projects-list">        
+        <div class="ml-project-card">
+            <h3>Produisez une étude de marché avec Pythoni (en cours)</h3>
+            <p>
+                Projet proposé par <strong>OpenClassrooms</strong> dans le cadre de leur formation <strong>Data Analyst</strong>. Ce projet vise à analyser le marché international de l'agroalimentaire grâce à des méthodes de clustering et d'analyse statistique.
+            </p>
+            <ul>
+                <li>📊 Préparation et nettoyage des données avec Pandas</li>
+                <li>📈 Clustering des pays avec CAH et K-Means</li>
+                <li>📑 Analyse en Composantes Principales (ACP)</li>
+            </ul>
+            <a href="#" class="more-info" onclick="openModal('modal-lapoule')">Lisez en plus</a> |
+            <a href="analyse.html" target="_blank">Rapport</a> 
+        </div>
+
+        <div id="modal-lapoule" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-lapoule')">&times;</span>
+                <h2>Détails du projet</h2>
+        
+                <h3>Contexte 🐣</h3>
+                <p>
+                    Dans le cadre de ce projet, j'ai été amené à réaliser une analyse de clustering pour l'entreprise <strong>La Poule qui Chante</strong> afin d'identifier les pays cibles pour son expansion internationale. J'ai utilisé un ensemble de données comportant des informations sur les pays, telles que la population, la consommation de volaille, le revenu moyen par habitant, et bien d'autres indicateurs économiques et politiques.
+                </p>
+        
+                <h3>Objectifs 🎯</h3>
+                <ul>
+                    <li>Identifier des clusters de pays pour prioriser l'expansion internationale.</li>
+                    <li>Utiliser des méthodes de réduction de dimensionnalité et de clustering, telles que l'ACP, les k-means et la CAH.</li>
+                    <li>Fournir des recommandations stratégiques pour l'entreprise.</li>
+                </ul>
+        
+                <h3>Analyse de Données 📊</h3>
+                <p>
+                    Les données utilisées dans cette analyse comprenaient les éléments suivants :
+                </p>
+                <ul>
+                    <li><strong>population_milliers_hab :</strong> Population du pays en milliers d’habitants.</li>
+                    <li><strong>evolution_population_pct :</strong> Taux d’évolution de la population en pourcentage.</li>
+                    <li><strong>consommation_volaille_pct :</strong> Pourcentage de la consommation de volaille dans l’alimentation.</li>
+                    <li><strong>tdi_pct :</strong> Taux de dépendance à l’importation (TDI) en pourcentage.</li>
+                    <li><strong>disponibilite_kg_p_an :</strong> Quantité de volaille disponible par habitant et par an en kg.</li>
+                    <li><strong>taux_croissance_pct :</strong> Taux de croissance économique en pourcentage.</li>
+                    <li><strong>revenu_par_habitant_usd :</strong> Revenu moyen par habitant en dollars US.</li>
+                    <li><strong>indice_stabilite_politique :</strong> Indice mesurant la stabilité politique (positif = stable, négatif = instable).</li>
+                </ul>
+        
+                <h3>Analyse en Composantes Principales (ACP) 🔍</h3>
+                <p>
+                    J'ai utilisé une ACP pour réduire la dimensionnalité des données et identifier les axes principaux. L'axe 1 représente la disponibilité alimentaire, la stabilité politique, le revenu par habitant et la consommation de volaille. L'axe 2 est lié à la croissance économique, et l'axe 3 est associé à la taille de la population et au taux de dépendance à l’importation. Les projections sur les axes 1 et 3 ont été particulièrement pertinentes pour notre analyse.
+                </p>
+        
+                <h3>Clustering K-means 🚀</h3>
+                <p>
+                    J'ai appliqué la méthode des k-means pour identifier les groupes de pays. Les clusters 4 et 5 des K-means se sont révélés être les plus intéressants :
+                </p>
+                <ul>
+                    <li>Faible consommation de volaille.</li>
+                    <li>Faible disponibilité de volaille.</li>
+                    <li>Bonne stabilité politique.</li>
+                    <li>Croissance économique positive.</li>
+                    <li>Populations très élevées.</li>
+                </ul>
+        
+                <h3>Clustering Hiérarchique (CAH) 🌐</h3>
+                <p>
+                    En utilisant la méthode de la CAH, j'ai trouvé que le cluster 2 était le plus équilibré, avec une consommation de volaille élevée mais une disponibilité encore raisonnable. Ce cluster présente également une bonne stabilité politique et une croissance économique correcte. Le cluster 3 est une alternative, bien que la consommation y soit légèrement plus faible.
+                </p>
+        
+                <h3>Recommandations Stratégiques 🔑</h3>
+                <p>
+                    En affinant les résultats des deux méthodes de clustering, j'ai observé que les clusters 3 (CAH) et 5 (k-means) se chevauchaient. Cependant, le critère décisif pour l'implantation de l'entreprise reste la distance géographique par rapport à la France. J'ai donc sélectionné les pays les plus proches de la France comme priorité pour l'expansion.
+                </p>
+        
+                <h3>Les 10 pays les plus proches de la France 🌍</h3>
+                <p>Voici la liste des 10 pays les plus proches de la France, en termes de distance géographique :</p>
+                <ul>
+                    <li>Allemagne</li>
+                    <li>Luxembourg</li>
+                    <li>Suisse</li>
+                    <li>Belgique</li>
+                    <li>Pays-Bas</li>
+                    <li>Autriche</li>
+                    <li>Royaume-Uni</li>
+                    <li>Irlande</li>
+                    <li>Danemark</li>
+                    <li>Suède</li>
+                </ul>
+        
+                <h3>Conclusion Finale 📈</h3>
+                <p>
+                    En conclusion, les pays des clusters 4 et 5 sont les plus prometteurs pour l'implantation de <strong>La Poule qui Chante</strong> 🚀. Après avoir pris en compte la distance géographique, je recommande de prioriser ces pays pour l'expansion, en particulier ceux proches de la France. Les autres pays peuvent également être explorés dans un deuxième temps.
+                </p>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="footer-container">
+        <!-- Section Contact -->
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <ul>
+                <li>📧 Email : <a href="conradagossou@gmail.com">conradagossou@gmail.com</a></li>
+                <li>📞 Téléphone : <a href="tel:+33745611648">+33 7 45 61 16 48</a></li>
+                <li>📍 Localisation : Rennes, France</li>
+            </ul>
+        </div>
+
+        <!-- Section Réseaux Sociaux -->
+        <div class="footer-social">
+            <button id="social-btn">Réseaux Sociaux</button>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/conrad-agossou" target="_blank">
+                    <img src="../img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/ConradAgs" target="_blank">
+                    <img src="../img/github.png" alt="GitHub">
+                </a>
+                <a href="mailto:conradagossou@gmail.com" target="_blank">
+                    <img src="../img/mail.png" alt="Email">
+                </a>
+            </div>
+        </div>
+
+        <!-- Section Complémentaire -->
+        <div class="footer-extras">
+            <a href="../doc/cv.pdf" target="_blank" class="cv-link">📄 Télécharger mon CV</a>
+            <a href="#contact-form" class="contact-link">📬 Formulaire de contact</a>
+        </div>
+
+        <!-- Section Copyright -->
+        <div class="footer-copyright">
+            <p>&copy; 2025 Conrad AGOSSOU. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/java.js"></script>
+
+</body>
+</html>
