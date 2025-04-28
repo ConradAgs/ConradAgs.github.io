@@ -254,7 +254,7 @@ header .barre-haut {
 
 
 #presentation {
-	background: #151515 url(../img/b-g.jpg) no-repeat center bottom;
+	background: #151515 url(../img/b-g2.jpeg) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1051,7 +1051,7 @@ header .barre-haut {
         font-size: 0.95em;
     }
     #presentation {
-        background: #151515 url(../img/b-g2.jpeg) no-repeat center bottom;
+        background: #151515 url(../img/b-g.jpg) no-repeat center bottom;
     }
 }
 
